@@ -51,10 +51,6 @@ const ProductCardGrid = (props) => {
       return (
         <ProductCard
           key={index}
-          product={product}
-          index={index}
-          itemListId={itemListId}
-          itemListName={itemListName}
           height={height}
           price={product.price}
           imageAlt={product.alt}
