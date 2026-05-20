@@ -14,26 +14,14 @@ import { generateMockProductData } from '../helpers/mock';
 import Button from '../components/Button';
 import Config from '../config.json';
 
-import { pushToDataLayer, mapProductToItem } from '../helpers/tracking';
+
 
 
 const ShopPage = (props) => {
   const [showFilter, setShowFilter] = useState(false);
   const data = generateMockProductData(6, 'woman');
 
-  useEffect(() => {
-  pushToDataLayer('view_item_list', {
-    item_list_id: 'shop_womans_sweaters',
-    item_list_name: "Woman's Sweaters",
-    items: data.map((product, index) =>
-      mapProductToItem(product, {
-        index,
-        itemListId: 'shop_womans_sweaters',
-        itemListName: "Woman's Sweaters",
-      })
-    ),
-  });
-}, []);
+
   
   useEffect(() => {
     window.addEventListener('keydown', escapeHandler);
