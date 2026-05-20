@@ -97,7 +97,11 @@ const ShopPage = (props) => {
           </div>
           <div className={styles.productContainer}>
             <span className={styles.mobileItemCount}>476 items</span>
-            <ProductCardGrid data={data}></ProductCardGrid>
+            <ProductCardGrid
+  data={data}
+  itemListId={'shop_womans_sweaters'}
+  itemListName={"Woman's Sweaters"}
+></ProductCardGrid>
           </div>
           <div className={styles.loadMoreContainer}>
             <span>6 of 456</span>
