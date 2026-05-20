@@ -137,13 +137,15 @@ const ProductPage = (props) => {
           </div>
           <div className={styles.suggestionContainer}>
             <h2>You may also like</h2>
-            <ProductCardGrid
-              spacing
-              showSlider
-              height={400}
-              columns={4}
-              data={suggestions}
-            />
+          <ProductCardGrid
+  spacing
+  showSlider
+  height={400}
+  columns={4}
+  data={suggestions}
+  itemListId={'product_recommendations'}
+  itemListName={'You may also like'}
+/>
           </div>
         </Container>
 
